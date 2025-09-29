@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+
+  <header>
+    <h1><img src="./images/logo.svg" alt="Splitter"></h1>
+  </header>
+
+  <main>
+    <div class="calculator">
+      <form id="tip-form">
+        <section aria-labelledby="input-section-title">
+          <h2 id="input-section-title" class="visually-hidden">Calculator Inputs</h2>
+          <div class="form-group">
+            <label for="bill">Bill</label>
+            <input type="number" id="bill" name="bill" placeholder="0" min="0" step="0.01" required>
+          </div>
+
+          <fieldset>
+            <legend>Select Tip %</legend>
+            <div class="tip-options">
+              <input type="radio" id="tip-5" name="tip" value="5"><label for="tip-5">5%</label>
+              <input type="radio" id="tip-10" name="tip" value="10"><label for="tip-10">10%</label>
+              <input type="radio" id="tip-15" name="tip" value="15"><label for="tip-15">15%</label>
+              <input type="radio" id="tip-25" name="tip" value="25"><label for="tip-25">25%</label>
+              <input type="radio" id="tip-50" name="tip" value="50"><label for="tip-50">50%</label>
+              <input type="number" id="tip-custom" name="tip-custom" placeholder="Custom" min="0">
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="people">Number of People</label>
+            <input type="number" id="people" name="people" placeholder="0" min="1" step="1" required>
+          </div>
+        </section>
+      </form>
+
+      <section class="results" aria-live="polite">
+        <h2 class="visually-hidden">Calculation Results</h2>
+        <div class="result-group">
+          <div>
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <output for="bill tip people" id="tip-amount">$0.00</output>
+        </div>
+
+        <div class="result-group">
+          <div>
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <output for="bill tip people" id="total-per-person">$0.00</output>
+        </div>
+
+        <button type="reset" form="tip-form">Reset</button>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>

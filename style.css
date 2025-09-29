@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    /* White & Black */
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* Grey */
+    --color-grey-600: #3d6666;
+    --color-grey-550: #547878;
+    --color-grey-500: #5e7a7d;
+    --color-grey-400: #7f9d9f;
+    --color-grey-300: #9ebbbd;
+    --color-grey-200: #c5e4e7;
+    --color-grey-50: #f3f9fa;
+
+    /* Green */
+    --color-green-900: #00474b;
+    --color-green-800: #085c61;
+    --color-green-750: #0d686d;
+    --color-green-400: #26c2ae;
+    --color-green-200: #9fe8df;
+
+    /* Orange */
+    --color-orange-400: #e17052;
+
+    /* Typography */
+    --font-family-primary: 'Space Mono', monospace;
+    --font-weight-bold: 700;
+
+    /* Font Sizes */
+    --font-size-h1: 48px;
+    /* Preset 1 */
+    --font-size-h2: 32px;
+    /* Preset 2 */
+    --font-size-h3: 24px;
+    /* Preset 3 */
+    --font-size-h4: 20px;
+    /* Preset 4 */
+    --font-size-body: 16px;
+    /* Preset 5 */
+    --font-size-small: 13px;
+    /* Preset 6 */
+
+    /* Line Heights */
+    --line-height-h1: 71px;
+    --line-height-h2: 47px;
+    --line-height-h3: 36px;
+    --line-height-h4: 30px;
+    --line-height-body: 24px;
+    --line-height-small: 19px;
+
+    /* Letter Spacing */
+    --letter-spacing-1: -1px;
+    --letter-spacing-2: -0.67px;
+
+    /* Spacing */
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-600: 48px;
+    --spacing-1000: 80px;
+    --spacing-1200: 96px;
+    --spacing-1500: 120px;
+    --spacing-1600: 128px;
+}
+
+/* --- CSS Reset & Global Styles --- */
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Reset margins and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+/* 3. Make images and media easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 4. Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
