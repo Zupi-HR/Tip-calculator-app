@@ -194,13 +194,15 @@ fieldset legend {
 }
 
 .tip-options label {
-    display: inline-block;
     background-color: var(--color-green-900);
+    font-size: var(--font-size-h3);
     color: var(--color-white);
     text-align: center;
     padding: var(--spacing-100) var(--spacing-200);
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    max-width: 147px;
 }
 
 #tip-custom {
