@@ -126,6 +126,7 @@ body {
 .calculator {
     background-color: white;
     padding: var(--spacing-400) var(--spacing-300);
+    border-radius: var(--spacing-300);
 }
 
 h1 {
@@ -177,4 +178,42 @@ fieldset {
 fieldset legend {
     color: var(--color-grey-500);
     margin-bottom: var(--spacing-100);
+}
+
+.tip-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-200);
+}
+
+.tip-options input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.tip-options label {
+    display: inline-block;
+    background-color: var(--color-green-900);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-100) var(--spacing-200);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tip-custom {
+    font-size: var(--font-size-h3);
+    color: var(--color-grey-550);
+    background-color: var(--color-grey-50);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    /* Ensure it fills the grid cell */
+}
+
+#tip-custom::placeholder {
+    color: var(--color-grey-500);
 }
