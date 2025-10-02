@@ -103,3 +103,78 @@ textarea,
 select {
     font: inherit;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+body {
+    font-size: var(--font-size-body);
+    font-family: 'Space Mono';
+    background-color: var(--color-grey-200);
+    min-height: 100vh;
+}
+
+.calculator {
+    background-color: white;
+    padding: var(--spacing-400) var(--spacing-300);
+}
+
+h1 {
+    padding: var(--spacing-600);
+}
+
+h1 img {
+    margin-inline: auto;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-grey-500);
+    margin-bottom: var(--spacing-100);
+}
+
+.form-input {
+    padding: var(--spacing-100) var(--spacing-200);
+    color: var(--color-green-900);
+    background-color: var(--color-grey-50);
+    font-size: var(--font-size-h3);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    text-align: end;
+
+}
+
+.input-with-icon {
+    background-repeat: no-repeat;
+    background-position: 1.2rem center;
+}
+
+#bill {
+    background-image: url(/images/icon-dollar.svg);
+}
+
+.form-input::placeholder {
+    color: var(--color-grey-300);
+}
+
+fieldset {
+    margin-block: var(--spacing-400);
+    padding: 0;
+    border: none;
+}
+
+fieldset legend {
+    color: var(--color-grey-500);
+    margin-bottom: var(--spacing-100);
+}
