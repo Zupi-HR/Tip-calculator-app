@@ -266,3 +266,53 @@ input[type="radio"]:focus+label {
     font-weight: var(--font-weight-bold);
     color: var(--color-orange-400);
 }
+
+.results {
+    display: grid;
+    gap: var(--spacing-300);
+    background-color: var(--color-green-900);
+    padding: var(--spacing-300);
+    border-radius: 15px;
+}
+
+.result-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-group__label {
+    color: var(--color-white);
+}
+
+.result-group__unit {
+    color: var(--color-grey-400);
+    font-size: var(--font-size-small);
+}
+
+.result-group output {
+    font-size: var(--font-size-h1);
+    color: var(--color-green-400);
+}
+
+.results button {
+    background-color: var(--color-green-400);
+    color: var(--color-green-900);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    padding-block: var(--spacing-100);
+    cursor: pointer;
+    margin-top: calc(var(--spacing-1600) - var(--spacing-300));
+    border: none;
+    border-radius: 5px;
+}
+
+.results button:disabled {
+    background-color: var(--color-green-750);
+    cursor: not-allowed;
+}
+
+.results button:not(:disabled):hover {
+    background-color: var(--color-green-200);
+}

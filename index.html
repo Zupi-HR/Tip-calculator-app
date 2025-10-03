@@ -57,21 +57,21 @@
         <h2 class="visually-hidden">Calculation Results</h2>
         <div class="result-group">
           <div>
-            <p>Tip Amount</p>
-            <span>/ person</span>
+            <p class="result-group__label">Tip Amount</p>
+            <span class="result-group__unit">/ person</span>
           </div>
           <output for="bill tip people" id="tip-amount">$0.00</output>
         </div>
 
         <div class="result-group">
           <div>
-            <p>Total</p>
-            <span>/ person</span>
+            <p class="result-group__label">Total</p>
+            <span class="result-group__unit">/ person</span>
           </div>
           <output for="bill tip people" id="total-per-person">$0.00</output>
         </div>
 
-        <button type="reset" form="tip-form">Reset</button>
+        <button type="reset" form="tip-form" disabled>Reset</button>
       </section>
     </div>
   </main>
