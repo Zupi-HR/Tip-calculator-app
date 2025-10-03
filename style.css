@@ -137,6 +137,10 @@ h1 img {
     margin-inline: auto;
 }
 
+.form-group {
+    margin-block-end: var(--spacing-400);
+}
+
 .form-group label {
     display: block;
     color: var(--color-grey-500);
@@ -161,6 +165,7 @@ h1 img {
     background-position: 1.2rem center;
 }
 
+
 #bill {
     background-image: url(/images/icon-dollar.svg);
 }
@@ -170,9 +175,9 @@ h1 img {
 }
 
 fieldset {
-    margin-block: var(--spacing-400);
     padding: 0;
     border: none;
+    margin-bottom: var(--spacing-400);
 }
 
 fieldset legend {
@@ -218,4 +223,18 @@ fieldset legend {
 
 #tip-custom::placeholder {
     color: var(--color-grey-500);
+}
+
+input[type="radio"]:checked+label {
+    color: var(--color-green-900);
+    background-color: var(--color-green-400);
+}
+
+.tip-options label:hover {
+    color: var(--color-green-900);
+    background-color: var(--color-green-200);
+}
+
+#people {
+    background-image: url(/images/icon-person.svg);
 }
