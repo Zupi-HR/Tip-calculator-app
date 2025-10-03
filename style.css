@@ -160,6 +160,18 @@ h1 img {
 
 }
 
+.form-input:hover {
+    outline: 3px solid var(--color-green-200);
+}
+
+.form-input:user-invalid {
+    outline: 3px solid var(--color-orange-400)
+}
+
+.form-input:focus {
+    outline: 3px solid var(--color-green-400);
+}
+
 .input-with-icon {
     background-repeat: no-repeat;
     background-position: 1.2rem center;
@@ -230,6 +242,10 @@ input[type="radio"]:checked+label {
     background-color: var(--color-green-400);
 }
 
+input[type="radio"]:focus+label {
+    outline: 3px solid var(--color-green-400);
+}
+
 .tip-options label:hover {
     color: var(--color-green-900);
     background-color: var(--color-green-200);
@@ -237,4 +253,16 @@ input[type="radio"]:checked+label {
 
 #people {
     background-image: url(/images/icon-person.svg);
+}
+
+.form-group__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form-group:has(#people:user-invalid) .error-message::after {
+    content: "Can't be zero";
+    font-weight: var(--font-weight-bold);
+    color: var(--color-orange-400);
 }
