@@ -226,11 +226,12 @@ fieldset legend {
     font-size: var(--font-size-h3);
     color: var(--color-grey-550);
     background-color: var(--color-grey-50);
+    padding: var(--spacing-100) var(--spacing-200);
     border: none;
     border-radius: 5px;
     width: 100%;
+    max-width: 147px;
     text-align: center;
-    /* Ensure it fills the grid cell */
 }
 
 #tip-custom::placeholder {
