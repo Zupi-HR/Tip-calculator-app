@@ -336,3 +336,17 @@ input[type="radio"]:focus+label {
         margin-top: calc(var(--spacing-200) - var(--spacing-100));
     }
 }
+
+@media (min-width: 1025px) {
+    .calculator {
+        max-width: 920px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-600);
+        padding: var(--spacing-400);
+    }
+
+    .results button {
+        margin-top: auto;
+    }
+}
