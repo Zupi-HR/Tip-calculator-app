@@ -320,10 +320,19 @@ input[type="radio"]:focus+label {
 @media (min-width: 768px) {
     .calculator {
         padding: var(--spacing-600) var(--spacing-1000);
-        max-width: 700px;
+        max-width: 620px;
     }
 
     .tip-options {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .results {
+        gap: var(--spacing-100);
+        padding: var(--spacing-300) var(--spacing-400);
+    }
+
+    .results button {
+        margin-top: calc(var(--spacing-200) - var(--spacing-100));
     }
 }
