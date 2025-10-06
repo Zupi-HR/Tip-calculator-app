@@ -127,6 +127,8 @@ body {
     background-color: white;
     padding: var(--spacing-400) var(--spacing-300);
     border-radius: var(--spacing-300);
+    max-width: 480px;
+    margin-inline: auto;
 }
 
 h1 {
@@ -218,8 +220,6 @@ fieldset legend {
     padding: var(--spacing-100) var(--spacing-200);
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    max-width: 147px;
 }
 
 #tip-custom {
@@ -229,8 +229,6 @@ fieldset legend {
     padding: var(--spacing-100) var(--spacing-200);
     border: none;
     border-radius: 5px;
-    width: 100%;
-    max-width: 147px;
     text-align: center;
 }
 
