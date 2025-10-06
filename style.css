@@ -181,7 +181,7 @@ h1 img {
 
 
 #bill {
-    background-image: url(/images/icon-dollar.svg);
+    background-image: url(./images/icon-dollar.svg);
 }
 
 .form-input::placeholder {
@@ -251,7 +251,7 @@ input[type="radio"]:focus+label {
 }
 
 #people {
-    background-image: url(/images/icon-person.svg);
+    background-image: url(./images/icon-person.svg);
 }
 
 .form-group__header {
