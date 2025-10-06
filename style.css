@@ -267,7 +267,8 @@ input[type="radio"]:focus+label {
 }
 
 .results {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-300);
     background-color: var(--color-green-900);
     padding: var(--spacing-300);
@@ -302,9 +303,9 @@ input[type="radio"]:focus+label {
     text-transform: uppercase;
     padding-block: var(--spacing-100);
     cursor: pointer;
-    margin-top: calc(var(--spacing-1600) - var(--spacing-300));
     border: none;
     border-radius: 5px;
+    margin-top: calc(var(--spacing-400) - var(--spacing-300));
 }
 
 .results button:disabled {
@@ -314,4 +315,15 @@ input[type="radio"]:focus+label {
 
 .results button:not(:disabled):hover {
     background-color: var(--color-green-200);
+}
+
+@media (min-width: 768px) {
+    .calculator {
+        padding: var(--spacing-600) var(--spacing-1000);
+        max-width: 700px;
+    }
+
+    .tip-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
